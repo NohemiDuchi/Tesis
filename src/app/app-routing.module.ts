@@ -1,10 +1,28 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
-const routes: Routes = [];
+import {
+  NgbPaginationModule, 
+  NgbAlertModule, 
+  NgbModule,
+  NgbCarousel,
+  NgbModalModule
+} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+
+  declarations: [],
+  imports: [
+    CommonModule,
+    NgbModule,
+    NgbPaginationModule,
+  ],exports:[
+    CommonModule,
+    NgbAlertModule,
+    NgbModule,
+    NgbPaginationModule,
+    NgbCarousel,
+    NgbModalModule
+  ]
 })
-export class AppRoutingModule { }
+export class BootstrapModule { }
